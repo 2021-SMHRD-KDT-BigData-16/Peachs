@@ -9,7 +9,7 @@
 */
 /* ======= Base ======= */
 :root{
-  --doc-primary-color: #50b5ff;
+  --doc-primary-color: #f07882;
   --doc-secondary-color: #777d74;
 }
 body {
@@ -242,7 +242,7 @@ select {
 
 /* ====== Header ====== */
 .header {
-  background: #494d55;
+  background: pink;
   color: rgba(255, 255, 255, 0.85);
   border-top: 5px solid #40babd;
   padding: 30px 0;
