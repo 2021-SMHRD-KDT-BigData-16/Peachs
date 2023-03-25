@@ -1,4 +1,3 @@
- 
 
 <!doctype html>
 <html lang="en">
@@ -167,7 +166,7 @@
                                       aria-expanded="false"><i class="ri-archive-drawer-line"></i><span>Forms
                                           Wizard</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                                   <ul id="wizard-form" class="iq-submenu collapse" data-bs-parent="#ui-elements">
-                                      <li class="">
+                                      <li class="active">
                                           <a href="../dashboard/form-wizard.html"><i class="ri-clockwise-line"></i>Simple Wizard</a>
                                       </li>
                                       <li class="">
@@ -316,8 +315,8 @@
                               </a>
                           </li>
                           <li class="nav-item dropdown">
-     <!--                           <a href="#" class="dropdown-toggle" id="group-drop" data-bs-toggle="dropdown"
-                                      aria-haspopup="true" aria-expanded="false"><i class="ri-group-line"></i></a>--> 
+      <!--                           <a href="#" class="dropdown-toggle" id="group-drop" data-bs-toggle="dropdown"
+                                      aria-haspopup="true" aria-expanded="false"><i class="ri-group-line"></i></a>-->
                               <div class="sub-drop sub-drop-large dropdown-menu" aria-labelledby="group-drop">
                                   <div class="card shadow-none m-0">
                                        <div class="card-header d-flex justify-content-between bg-primary">
@@ -732,248 +731,179 @@
               </div>
            </div>
         </div>       <div id="content-page" class="content-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="header-title">
-                        <h4 class="card-title">Files</h4>
-                    </div>
-                    <div class="card-header-toolbar d-flex align-items-center">
-                        <div class="dropdown">
-                            <span class="dropdown-btoggle text-primary" id="dropdownMenuButton5" data-bs-toggle="dropdown">
-                                <i class="ri-more-2-fill h4"></i>
-                            </span>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton5">
-                            <a class="dropdown-item" href="#"><i class="ri-eye-fill me-2"></i>View</a>
-                            <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill me-2"></i>Delete</a>
-                            <a class="dropdown-item" href="#"><i class="ri-pencil-fill me-2"></i>Edit</a>
-                            <a class="dropdown-item" href="#"><i class="ri-printer-fill me-2"></i>Print</a>
-                            <a class="dropdown-item" href="#"><i class="ri-file-download-fill me-2"></i>Download</a>
-                            </div>
+       <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card position-relative inner-page-bg bg-primary" style="height: 150px;">
+                        <div class="inner-page-title">
+                        <h3 class="text-white">Simple Wizard Page</h3>
+                        <p class="text-white">lorem ipsum</p>
                         </div>
                     </div>
                 </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <div class="row justify-content-between d-flex">
-                            <div class="col-sm-12 col-md-6">
-                            <div id="user_list_datatable_info" class="dataTables_filter">
-                                <form class="me-3 position-relative">
-                                    <div class="form-group mb-0">
-                                        <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search">
-                                    </div>
-                                </form>
-                            </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                            <div class="user-list-files d-flex justify-content-end">
-                                <a href="#" class="chat-icon-phone btn bg-soft-primary">
-                                Print
-                                </a>
-                                <a href="#" class="chat-icon-video btn bg-soft-primary">
-                                Excel
-                                </a>
-                                <a href="#" class="chat-icon-delete btn bg-soft-primary">
-                                Pdf
-                                </a>
-                            </div>
-                            </div>
+                <div class="col-sm-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Simple Wizard</h4>
                         </div>
-                        <table class="files-lists table table-striped mt-4">
-                            <thead>
-                            <tr>
-                                <th scope="col">
-                                    <div class=" text-center">
-                                        <input type="checkbox" class="form-check-input">
+                        </div>
+                        <div class="card-body">
+                        <form id="form-wizard1" class="text-center mt-3">
+                            <ul id="top-tab-list" class="p-0 row list-inline">
+                                <li class="col-lg-3 col-md-6 text-start mb-2 active" id="account">
+                                    <a href="javascript:void();">
+                                    <i class="ri-lock-unlock-line"></i><span>Account</span>
+                                    </a>
+                                </li>
+                                <li id="personal" class="col-lg-3 col-md-6 mb-2 text-start">
+                                    <a href="javascript:void();">
+                                    <i class="ri-user-fill"></i><span>Personal</span>
+                                    </a>
+                                </li>
+                                <li id="payment" class="col-lg-3 col-md-6 mb-2 text-start">
+                                    <a href="javascript:void();">
+                                    <i class="ri-camera-fill"></i><span>Image</span>
+                                    </a>
+                                </li>
+                                <li id="confirm" class="col-lg-3 col-md-6 mb-2 text-start">
+                                    <a href="javascript:void();">
+                                    <i class="ri-check-fill"></i><span>Finish</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- fieldsets -->
+                            <fieldset>
+                                <div class="form-card text-start">
+                                    <div class="row">
+                                    <div class="col-7">
+                                        <h3 class="mb-4">Account Information:</h3>
                                     </div>
-                                </th>
-                                <th scope="col">File Name</th>
-                                <th scope="col">File Type</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Size</th>
-                                <th scope="col">Author</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <div class=" text-center">
-                                        <input type="checkbox" class="form-check-input">
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 1 - 4</h2>
                                     </div>
-                                </td>
-                                <td>
-                                    <img class="rounded-circle img-fluid avatar-40 me-2" src="../assets/images/page-img/43.png" alt="profile"> post report
-                                </td>
-                                <td>Document</td>
-                                <td>
-                                    Mar 12, 2020
-                                </td>
-                                <td>390 kb</td>
-                                <td>
-                                    Anna Sthesia
-                                </td>
-                                <td>
-                                    <div class="flex align-items-center list-user-action">
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Download" href="#"><i class="ri-download-line"></i></a>
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class=" text-center">
-                                        <input type="checkbox" class="form-check-input">
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Email: *</label>
+                                            <input type="email" class="form-control" name="email" placeholder="Email Id" />
+                                        </div>
                                     </div>
-                                </td>
-                                <td>
-                                    <img class="rounded-circle img-fluid avatar-40 me-2" src="../assets/images/page-img/44.png" alt="profile"> usages
-                                </td>
-                                <td>Document</td>
-                                <td>
-                                    Mar 18, 2020
-                                </td>
-                                <td>600 kb</td>
-                                <td>
-                                    Paul Molive
-                                </td>
-                                <td>
-                                    <div class="flex align-items-center list-user-action">
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Download" href="#"><i class="ri-download-line"></i></a>
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Username: *</label>
+                                            <input type="text" class="form-control" name="uname" placeholder="UserName" />
+                                        </div>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class=" text-center">
-                                        <input type="checkbox" class="form-check-input">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Password: *</label>
+                                            <input type="password" class="form-control" name="pwd" placeholder="Password" />
+                                        </div>
                                     </div>
-                                </td>
-                                <td>
-                                    <img class="rounded-circle img-fluid avatar-40 me-2" src="../assets/images/page-img/45.png" alt="profile"> Images file
-                                </td>
-                                <td>Slide</td>
-                                <td>
-                                    Mar 19, 2020
-                                </td>
-                                <td>800 kb</td>
-                                <td>
-                                    Bob Frapples
-                                </td>
-                                <td>
-                                    <div class="flex align-items-center list-user-action">
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Download" href="#"><i class="ri-download-line"></i></a>
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Confirm Password: *</label>
+                                            <input type="password" class="form-control" name="cpwd" placeholder="Confirm Password" />
+                                        </div>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class=" text-center">
-                                        <input type="checkbox" class="form-check-input">
                                     </div>
-                                </td>
-                                <td>
-                                    <img class="rounded-circle img-fluid avatar-40 me-2" src="../assets/images/page-img/46.png" alt="profile"> total comments
-                                </td>
-                                <td>Document</td>
-                                <td>
-                                    Mar 21, 2020
-                                </td>
-                                <td>500 kb</td>
-                                <td>
-                                    Barb Ackue
-                                </td>
-                                <td>
-                                    <div class="flex align-items-center list-user-action">
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Download" href="#"><i class="ri-download-line"></i></a>
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                </div>
+                                <button type="button" name="next" class="btn btn-primary next action-button float-end" value="Next" >Next</button>
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card text-start">
+                                    <div class="row">
+                                    <div class="col-7">
+                                        <h3 class="mb-4">Personal Information:</h3>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class=" text-center">
-                                        <input type="checkbox" class="form-check-input">
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 2 - 4</h2>
                                     </div>
-                                </td>
-                                <td>
-                                    <img class="rounded-circle img-fluid avatar-40 me-2" src="../assets/images/page-img/47.png" alt="profile"> popular events
-                                </td>
-                                <td>Pdf</td>
-                                <td>
-                                    Mar 24, 2020
-                                </td>
-                                <td>320 kb</td>
-                                <td>
-                                    Barb Ackue
-                                </td>
-                                <td>
-                                    <div class="flex align-items-center list-user-action">
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Download" href="#"><i class="ri-download-line"></i></a>
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class=" text-center">
-                                        <input type="checkbox" class="form-check-input">
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">First Name: *</label>
+                                            <input type="text" class="form-control" name="fname" placeholder="First Name" />
+                                        </div>
                                     </div>
-                                </td>
-                                <td>
-                                    <img class="rounded-circle img-fluid avatar-40 me-2" src="../assets/images/page-img/43.png" alt="profile"> todo list
-                                </td>
-                                <td>excel</td>
-                                <td>
-                                    Mar 28, 2020
-                                </td>
-                                <td>600 kb</td>
-                                <td>
-                                    Ira Membrit
-                                </td>
-                                <td>
-                                    <div class="flex align-items-center list-user-action">
-                                       <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Download" href="#"><i class="ri-download-line"></i></a>
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Last Name: *</label>
+                                            <input type="text" class="form-control" name="lname" placeholder="Last Name" />
+                                        </div>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class=" text-center">
-                                        <input type="checkbox" class="form-check-input">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Contact No.: *</label>
+                                            <input type="text" class="form-control" name="phno" placeholder="Contact No." />
+                                        </div>
                                     </div>
-                                </td>
-                                <td>
-                                    <img class="rounded-circle img-fluid avatar-40 me-2" src="../assets/images/page-img/45.png" alt="profile"> music list
-                                </td>
-                                <td>pdf</td>
-                                <td>
-                                    Mar 30, 2020
-                                </td>
-                                <td>900 kb</td>
-                                <td>
-                                    Pete Sariya
-                                </td>
-                                <td>
-                                    <div class="flex align-items-center list-user-action">
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Download" href="#"><i class="ri-download-line"></i></a>
-                                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Alternate Contact No.: *</label>
+                                            <input type="text" class="form-control" name="phno_2" placeholder="Alternate Contact No." />
+                                        </div>
                                     </div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+                                    </div>
+                                </div>
+                                <button type="button" name="next" class="btn btn-primary next action-button float-end" value="Next" >Next</button>
+                                <button type="button" name="previous" class="btn btn-dark previous action-button-previous float-end me-3" value="Previous" >Previous</button>
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card text-start">
+                                    <div class="row">
+                                    <div class="col-7">
+                                        <h3 class="mb-4">Image Upload:</h3>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 3 - 4</h2>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label class="form-label">Upload Your Photo:</label>
+                                    <input type="file" class="form-control" name="pic" accept="image/*">
+                                    </div>
+                                    <div class="form-group">
+                                    <label class="form-label">Upload Signature Photo:</label>
+                                    <input type="file" class="form-control" name="pic-2" accept="image/*">
+                                    </div>
+                                </div>
+                                <button type="button" name="next" class="btn btn-primary next action-button float-end" value="Submit" >Submit</button>
+                                <button type="button" name="previous" class="btn btn-dark previous action-button-previous float-end me-3" value="Previous" >Previous</button>
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <div class="row">
+                                    <div class="col-7">
+                                        <h3 class="mb-4 text-left">Finish:</h3>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 4 - 4</h2>
+                                    </div>
+                                    </div>
+                                    <br><br>
+                                    <h2 class="text-success text-center"><strong>SUCCESS !</strong></h2>
+                                    <br>
+                                    <div class="row justify-content-center">
+                                    <div class="col-3"> <img src="../assets/images/page-img/img-success.png" class="img-fluid" alt="fit-image"> </div>
+                                    </div>
+                                    <br><br>
+                                    <div class="row justify-content-center">
+                                    <div class="col-7 text-center">
+                                        <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                    </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
-    </div>    
       </div>
     </div>
     <!-- Wrapper End-->
